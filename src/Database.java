@@ -1,23 +1,15 @@
-import javax.swing.*;
-import java.sql.Connection;
-import java.sql.Driver;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class Database {
+    private Connection connection;
 
-    public Connection connection(){
-Connection conn = null;
-
-
-try {
-String url = "jdbc:mysql://localhost:3306/alunos?user=root&password=";
-conn = DriverManager.getConnection(url);
-
-}catch (SQLException e){
-    JOptionPane.showMessageDialog(null, e.getMessage());
-}
-
-return conn;
+    protected Connection connection() {
+        try {
+            this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/alunos?user=root&password=admin");
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return this.connection;
     }
+
 }
