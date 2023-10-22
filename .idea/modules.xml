@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/CRUD JAVA.iml" filepath="$PROJECT_DIR$/CRUD JAVA.iml" />
+=======
       <module fileurl="file://$PROJECT_DIR$/ConexaoDatabase.iml" filepath="$PROJECT_DIR$/ConexaoDatabase.iml" />
+>>>>>>> 1c02d07e08ec67289f4196d9e8e8275fd3a78174
     </modules>
   </component>
 </project>
